@@ -1,0 +1,204 @@
+---
+import AstroJS from "./icons/AstroJS.astro";
+import CSS from "./icons/CSS.astro";
+import JavaScript from "./icons/JavaScript.astro";
+import NextJS from "./icons/NextJS.astro";
+import ReactJS from "./icons/ReactJS.astro";
+import Tailwind from "./icons/Tailwind.astro";
+import TypeScript from "./icons/TypeScript.astro";
+import ViteJS from "./icons/ViteJS.astro";
+import HeadlessUI from "./icons/HeadlessUI.astro";
+import Api from "./icons/Api.astro";
+
+const SITIOS ={
+  SPACEX:{
+    web: "https://astro-spacex-clone.vercel.app/",
+    github: "https://github.com/NatalioDev/astro-spacex-clone/tree/master"
+  }
+}
+
+const TAGS = {
+  NEXT: {
+    name: "Next.js",
+    class: "bg-black text-white",
+    icon: NextJS,
+  },
+  TAILWIND: {
+    name: "Tailwind",
+    class: "bg-[#003159] text-white",
+    icon: Tailwind,
+  },
+  REACT:{
+    class: "bg-black",
+    icon: ReactJS,
+    name: "React.js",
+  },
+  ASTRO:{
+    class: "bg-[#003159]",
+    icon: AstroJS,
+    name: "Astro.js",
+  },
+  VITEJS:{
+    class: "",
+    icon: ViteJS,
+    name: "Vite.js",
+  },
+  CSS:{
+    class: " bg-[#003159] text-white ",
+    icon: CSS,
+    name: "CSS",
+  },
+  JAVASCRIPT:{
+    class: "bg-[#003159] text-white",
+    icon: JavaScript,
+    name: "JavaScript",
+  },
+  TYPESCRIPT:{
+    class: " bg-black",
+    icon: TypeScript,
+    name: "TypeScript",
+  },
+  API:{
+    class: "bg-[#003159] text-white",
+    icon: Api,
+    name: "Api Rest"
+  },
+  HEADLESSUI:{
+    class: " bg-black",
+    icon: HeadlessUI,
+    name: "HeadlessUI",
+  },
+}
+const PROJECTS = [
+  {
+    title: "SpaceX Clone",
+    description:`
+      Clonación del sitio web de SpaceX utilizando tecnologías como AstroJS, React y Tailwind.
+      Explora los lanzamientos a través de esta recreación, desarrollada con TypeScript y aprovechando la API gratuita de SpaceX.`,
+    link: "https://astro-spacex-clone.vercel.app/",
+    github: "https://github.com/NatalioDev/astro-spacex-clone",
+    image: "/projects/SpaceX.webp",
+    tags: [TAGS.ASTRO, TAGS.REACT, TAGS.TAILWIND, TAGS.TYPESCRIPT, TAGS.API, TAGS.HEADLESSUI ],
+  },
+  {
+    title: "Multi Step Form",
+    description:
+    `Formulario de varios pasos donde puse a prueba mis habilidades para validar tipos y condiciones en las distintas etapas del formulario.
+    Uno de mi primeros proyectos con TypeScript.
+    Desafío de la plataforma de Frontend Mentor.`,
+    link: "https://nataliodev.github.io/multi-step-form/",
+    github: "https://github.com/NatalioDev/multi-step-form",
+    image: "/projects/MultiStepForm-1.webp",
+    tags: [TAGS.VITEJS, TAGS.REACT, TAGS.TAILWIND, TAGS.TYPESCRIPT],
+  },
+  {
+    title: "Easybank Landing Page",
+    description:
+    `Página de inicio, donde puse a prueba mis habilidades de diseño y distintas transiciones dentro de la página. 
+    También es un desafío de la plataforma Frontend Mentor.`,
+    link: "https://nataliodev.github.io/Easybank-landing-page/",
+    github: "https://github.com/NatalioDev/Easybank-landing-page",
+    image: "/projects/Easybank-1.webp",
+    tags: [TAGS.VITEJS, TAGS.REACT, TAGS.TAILWIND, TAGS.TYPESCRIPT, TAGS.HEADLESSUI ],
+  },
+  {
+    title: "Weather App",
+    description:
+    `Aplicación del clima, donde aplico mis conceptos de manejo de estados (Hooks) con React y el uso de una API para mostrar los datos que el usuario solicite en tiempo real.`,
+    link: "https://nataliodg.github.io/react-weather-app/",
+    github: "https://github.com/Nataliodg/react-weather-app",
+    image: "/projects/WeatherApp.webp",
+    tags: [TAGS.REACT, TAGS.CSS ],
+  },
+  {
+    title: "CocaCola Landing Page Clone",
+    description:
+    `Esta es mi primera página realizada con puro HTML y CSS. Intenta replicar la página de inicio de una empresa.`,
+    link: "https://nataliodg.github.io/Sitio-Web-1/",
+    github: "https://github.com/Nataliodg/Sitio-Web-1",
+    image: "/projects/CocaColaClone.webp",
+    tags: [TAGS.CSS ],
+  },
+  {
+    title: "Landing Page (Grid)",
+    description:
+    `Página de inicio de una marca personal ficticia, donde pongo a prueba mis conocimientos el uso de Grid en el diseño.`,
+    link: "https://nataliodg.github.io/Web-Page-Grid/",
+    github: "https://github.com/Nataliodg/Web-Page-Grid",
+    image: "/projects/LandingPageGrid.webp",
+    tags: [TAGS.CSS ],
+  },
+  {
+    title: "Dark Mode App",
+    description:
+    `En esta aplicación sigo poniendo a prueba mis conocimientos en el uso de estados, creando un modo oscuro. 
+    Además, agrego el hook useContext de React para que el modo oscuro o claro se mantenga en toda la aplicación.`,
+    link: "https://nataliodg.github.io/react-dark-mode-app/#/",
+    github: "https://github.com/Nataliodg/react-dark-mode-app",
+    image: "/projects/DarkModeApp.webp",
+    tags: [TAGS.REACT, TAGS.CSS ],
+  },
+  {
+    title: "Snap Landing Page",
+    description:
+    `Sección de introducción con navegación desplegable. Desafío de Frontend Mentor donde pongo a prueba mi capacidad para crear menús desplegables y de diseño básicos.`,
+    link: "https://astro-landing-page-dropdown-jbsm81ffp-nataliodevs-projects.vercel.app/",
+    github: "https://github.com/NatalioDev/astro-landing-page-dropdown",
+    image: "/projects/SnapLandingPage.webp",
+    tags: [TAGS.ASTRO, TAGS.REACT, TAGS.TAILWIND, TAGS.TYPESCRIPT, TAGS.HEADLESSUI ],
+  },
+  {
+    title: "Anterior Portafolio",
+    description:
+    `Mi primer portafolio, donde se aprecia, a mi parecer, el crecimiento que tuve desde que empecé a desarrollar proyectos. También se pueden ver mis conocimientos en algo de backend, pero me decidí por el desarrollo frontend porque me apasiona más el diseño de interfaces modernas.`,
+    link: "https://next-portafolio-nataliodg.vercel.app/",
+    github: "https://github.com/Nataliodg/next-portafolio",
+    image: "/projects/AntiguoPortafolio.webp",
+    tags: [TAGS.NEXT, TAGS.CSS ],
+  },
+]
+---
+
+{
+  PROJECTS.map(({ image, title, description, tags, link, github }) => (
+    <article class="pb-8">
+      <h3 class="text-2xl font-semibold text-[#9ae792] mb-2">{title}</h3>
+      <p class="text-lg mb-4 text-pretty">{description}</p>
+      <p class="text-lg mb-4 text-pretty">
+        Visita el 
+          <a
+            class="text-[#5ed150]"
+            target="_blank" 
+            rel="noreferrer noopener" 
+            href={link}>
+              sitio aquí
+          </a> 
+        o revisa el código en 
+          <a
+            class="text-[#5ed150]"
+            target="_blank" 
+            rel="noreferrer noopener" 
+            href={github}>
+              GitHub.
+            </a>
+        </p>
+      <ul class="flex flex-wrap gap-x-2 flex-row mb-2 max-w-full overflow-hidden">
+        {tags.map((tag) => (
+          <li class="mt-2">
+            <span
+              class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2 items-center`}
+            >
+              <tag.icon class="size-4 md:size-6 lg:size-8" />
+              {tag.name}
+            </span>
+          </li>
+        ))}
+      </ul>
+      <img
+        class="rounded shadow-2xl shadow-white/20 pt-4 max-h-[450px]"
+        src={image}
+        alt={`Captura de pantalla del proyecto ${image}`}
+      />
+    </article>
+  ))
+}
